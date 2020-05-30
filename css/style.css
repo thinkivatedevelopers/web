@@ -592,6 +592,7 @@ ul, li {
 	margin-bottom: 40px;
 }
 #ContactUs .floating-input {
+	color: white;
 	width: 100%;
 	border: 0;
 	border-bottom: 1px solid #999999;
