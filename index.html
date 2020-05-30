@@ -10,7 +10,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sidebar.css">
@@ -285,60 +285,8 @@
 		</div>
 		</section>
         <!-- Portfolio section ends here -->
-		
-		<!-- OURVALUES section starts here -->
-		<section id="Values">
-            <div class="container">
-               <!-- <div class="block-heading">
-                    <h2>OUR VALUES</h2>
-                    <p>Thinkivate Learning Values</p>
-                </div> -->
-				<br><br><br>
-				<div class="block-heading">
-                    <h2 style='color:#d6b644'>OUR VALUES</h2>
-                    <p style='color:white;'>Thinkivate Learning Values</p>
-                </div>
-				<div class="row animate-box">
-					<div class="container" >
-						<!--<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-							<h1 class="heading-section" style="text-align:center">Our Values</h1>
-						</div> -->
-					<div class="row services text-center" >
-						<div class="view view-ninth">
-							<img src="images/mission7.jpg" />
-							<div class="mask mask-1"></div>
-							<div class="mask mask-2"></div>
-						<div class="content">
-							<h2>Our Mission</h2>
-							<p>is to achieve the reputation of a quality, high standard and reliable educational solution and service provider Company</p>
-						</div>
-						</div> 
-						<div class="view view-ninth">
-							<img src="images/vision1.jpg" />
-							<div class="mask mask-1"></div>
-							<div class="mask mask-2"></div>
-						<div class="content">
-							<h2>Our Vision</h2>
-							<p>is to achieve 100% customer satisfaction by delivering quality products and services at an affordable cost.</p>
-						</div>
-						</div> 
-						<div class="view view-ninth">
-							<img src="images/future2.jpg"/>
-							<div class="mask mask-1"></div>
-							<div class="mask mask-2"></div>
-						<div class="content">
-							<h2>Future Plan</h2>
-							<p>is to become and entity in technology based corporate solutions</p>
-						</div>
-						</div> 
-					</div>
-					</div>
-				</div>
-            </div>
-        </section>
-		<!-- OURVALUES section ends here -->
-
-		<!-- our values -->
+	
+		<!-- OUR VALUES section starts here -->
 		<section id="Values">
             <div class="container">
 				<br><br><br>
@@ -348,21 +296,21 @@
                 </div>
 				<div class="row">
 				    <div class="column">
-							<h2>Our Mission</h2>
-							<p>is to achieve the reputation of a quality, high standard and reliable educational solution and service provider Company</p>
+						<h2 style="text-align: center";>Our Mission</h2>
+						<p>is to achieve the reputation of a quality, high standard and reliable educational solution and service provider Company</p>
 					</div>
 					<div class="column">
-						<h2>Our Vision</h2>
+						<h2 style="text-align: center;">Our Vision</h2>
 						<p>is to achieve 100% customer satisfaction by delivering quality products and services at an affordable cost.</p>
 					</div>
 					<div class="column">
-						<h2>Future Plan</h2>
+						<h2 style="text-align: center;">Future Plan</h2>
 						<p>is to become and entity in technology based corporate solutions</p>
 					</div>
 				</div> 
 			</div>
         </section>
-		<!-- our values end -->
+		<!-- OUR VALUES section ends -->
 		
 		<!-- Careerss section starts here -->
         <section id="Careers">
@@ -584,7 +532,7 @@
                     </div>
                     <div class="form-wrap">
                         <p class="add-title">Send Us Message</p>
-                        <form id="contactform" method="POST" action="https://script.google.com/macros/s/AKfycby-WK0eHXZyCVeRl0E44Wwq2p8zcvgGBHOcOZiN/exec">
+                        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycby-WK0eHXZyCVeRl0E44Wwq2p8zcvgGBHOcOZiN/exec">
                             <div class="fname floating-label">
                                 <input type="text" class="floating-input" name="full name" id="full-name-field" />
                                 <label for="full-name-field">Full Name</label>
@@ -606,9 +554,20 @@
                                 <label for="user-msg-field" class="msg-label">Your Message</label>
                             </div>
                             <div class="submit-btn">
-                                <button type="submit" style="color:#000000">Submit</button>
+                                <button  style="color:#000000">Submit</button>
                             </div>
-                        </form>
+						</form>
+						<!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div style="display:none;" id="thankyou_message">
+        <h2>
+            <em>Thanks</em> for contacting us!
+            We will get back to you soon!
+        </h2>
+    </div>
+
+
+    <script data-cfasync="false" type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
                     </div>
                 </div>
             </div>
