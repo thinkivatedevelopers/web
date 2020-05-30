@@ -6,9 +6,8 @@
    text-align: justify;
     color: white;
     float: left;
-   /* width: 33.33%;
-    padding: 10px;
-    height: 300px; */
-    width: ;
+    width: 33.3%;
+    padding: 30px;
+    height: 250px;
   }
   .column:hover { background-color: slategray;}
