@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thinkivate Learning Pvt Ltd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-responsive-style.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="script/all-plugins.js"></script>
+    <script type="text/javascript" src="script/plugin-active.js"></script>
+</head>
+<style>
+<!--body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+} -->
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#d6b644;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+<!--our values style -->
+<style>
+	.view {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    float: left;
+	border: 8px solid #fff;
+	border-style: ridge;
+	overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center;
+	}
+	.view .mask, .view .content {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+	}
+	.view img {
+    display: block;
+    position: relative;
+	}
+	.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+	}
+	.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+	}
+	.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+	}
+	.view a.info:hover {
+    box-shadow: 0 0 5px #000
+	}
+	.view-ninth .mask-1,
+	.view-ninth .mask-2{
+	background-color: rgba(0,0,0,0.5);
+    height: 361px;
+    width: 361px;
+	background: rgba(119,0,36,0.5);
+	opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+	}
+	.view-ninth .mask-1 { 
+    left: auto;
+    right: 0px;
+    transform: rotate(56.5deg) translateX(-180px);
+    transform-origin: 100% 0%;
+	}
+	.view-ninth .mask-2 { 
+    top: auto;
+    bottom: 0px;
+    transform: rotate(56.5deg) translateX(180px);
+	transform-origin: 0% 100%;
+	}
+	.view-ninth .content{
+    background: rgba(0,0,0,0.9);
+    height:0px;
+    opacity: 0.5;
+    width: 500px;
+    overflow: hidden;
+	transform: rotate(-33.5deg) translate(-112px,166px);
+    transform-origin: 0% 100%;
+    transition: all 0.4s ease-in-out 0.3s;
+	}
+	.view-ninth h2{
+    background: transparent;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+	}
+	.view-ninth a.info{
+    display: none;
+	}
+	.view-ninth:hover .content{
+    height: 200px;
+    width: 300px;
+    opacity: 0.9;
+    top: 40px;
+    transform: rotate(0deg) translate(0px,0px);
+	}
+	.view-ninth:hover .mask-1,
+	.view-ninth:hover .mask-2{
+	transition-delay: 0s;
+	}
+	.view-ninth:hover .mask-1{
+    transform: rotate(56.5deg) translateX(1px);
+	}
+	.view-ninth:hover .mask-2 {  
+    transform: rotate(56.5deg) translateX(-1px);
+	}
+	</style>
+	
+	<!-- table for careers page -->
+	<style>
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	td, th {
+		border: 5px solid #dddddd;
+		text-align: left;
+		adding: 8px;
+	}
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	tr:nth-child(odd) {
+		background-color: #ffffff;
+	}
+	</style>
+	
+	<!-- style for pop up starts here. -->
+	<style>
+      <!--*{
+		margin:0px;
+		padding:0px;
+	}
+	<!--body, html{
+        width:100%;
+		height:100%; } -->
+	#cm-popup{
+        display:none;
+		box-shadow: 0 0 10px #888888;
+		<!--position:fixed;-->
+		<!--left:50%;-->
+		<!--transform:translateX(-50%); -->
+		right:50%;
+		left:50%;
+		padding: 50px; 30px;
+		width:50%;
+		height:700px;
+		
+	}
+	.cm-btn{
+        border:none;
+        background:#000000;
+        color:white;
+		border-radius:2px;
+	}
+	.cm-btn:hover{
+		background:#808080;
+	}
+	#cm-popup1{
+        display:none;
+		box-shadow: 0 0 10px #888888;
+		<!--position:fixed;-->
+		left:50%;
+		<!--transform:translateX(-50%);-->
+        width:50%;
+		height:600px;
+	}
+	#cm-popup2{
+        display:none;
+		box-shadow: 0 0 10px #888888;
+		<!--position:fixed;-->
+		left:50%;
+		<!--transform:translateX(-50%);-->
+        width:50%;
+		height:600px;
+	}
+	</style>
+	
+	<!-- style for sidebar -->
+	<style>
+	.sidebar {
+		position: absolute;
+		right: -260px;
+		width:260px;
+		height: 550px;
+		background-color:#1C2833 ;
+		text-align:center;
+		transition:0.800s ease;
+	}
+	.sidebar .side-nav {
+		list-style-type: none;
+		padding:0;
+		margin:0;
+	}
+	.side-item {
+		display: flex;
+	}
+	.side-item .side-link {
+		text-decoration: none;
+		color: white;
+		font-size: 15px;
+		font-weight: bold;
+		padding: 10px;
+		flex: 1;
+	}
+	.side-item .side-link:hover {
+		background-color: whitesmoke;
+		color: black;
+	}
+	.toggle-collapse {
+		float: left;
+		margin-left: -3.3em;
+		margin-top: .5em;
+		content: "";
+		outline: inherit;
+		border: 0px;
+		background: transparent;
+	}
+	/* ....toggle icon ...*/
+	.toggle-icon,
+	.toggle-icon::before,
+	.toggle-icon::after{
+		content:"";
+		width: 30px;
+		height: 3px;
+		position: fixed;
+		background-color: #FFFFFF;
+		border-radius: 2em;
+		border: 1px solid #FFFFFF;
+		cursor: pointer;
+		<!--transition: 0.800s ease;
+		margin-top: 0.8em; -->
+	}
+	.toggle-icon::before {
+		position: absolute;
+		left: -1px;
+		margin-top: -0.8em;
+	}
+	.toggle-icon::after{
+		position: absolute;
+		left: -1px;
+		margin-top: 0.6em;
+		width: 30px;
+	}
+	.toggle-icon{
+		width: 30px;
+	}
+	.show .toggle-icon::after{
+		width: 30px;
+	}
+	.show .toggle-icon {
+		width: 30px;
+	}
+	.side-item .site-name {
+		text-decoration: none;
+		padding: 20px;
+		font-size: 20px;
+		color: whitesmoke;
+	}
+	.side-item:last-child .side-link i{
+		/*padding: .5em;*/
+		padding: 10px;
+	}
+	.side-item:hover:last-child .side-link {
+		background-color:white;
+		color: black;
+	}
+	</style>
+	<!--style for sidebar ends -->
+
+<style>
+#header .header-logo img {
+	position: absolute;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+	margin-top: -20px !important;
+}
+
+#header .header-logo .logo-normal {
+	opacity: 1;
+}
+
+#header .header-logo .logo-sticky {
+	opacity: 0;
+}
+
+.sticky-header-active #header .header-logo .logo-normal {
+	opacity: 0;
+}
+
+.sticky-header-active #header .header-logo .logo-sticky {
+	opacity: 1;
+}
+</style>
+
+<body data-spy="scroll" data-target=".main-navigation" data-offset="150">
+    <section id="MainContainer">
+        <!-- Header starts here -->
+		<header id="Header">
+            <nav class="main-navigation">
+                <div class="container clearfix">
+                    <!--<div class="site-logo-wrap">-->
+                        <!--<a class="logo" href="#"><img  src="images/logo1.png" style = "width:200px; height:50px;"  alt="Design Studio"></a>-->
+					<div class="header-logo">
+						<a href="index.html">
+							<img alt="Porto" class="logo-normal" width="82" height="40" src="images/logo1.png">
+							<img alt="Porto" class="logo-sticky" width="82" height="40" src="images/finalT.jpg">
+						</a>
+                    </div>
+                    <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
+					<div class="containerside">
+						<nav class="sidebar" id="sideID">
+							<button type="button" onclick="myFnc(this)" class="toggle-collapse" id="toggle-button">
+							<span class="toggle-icon"></span>
+							</button>
+							<ul class="side-nav">
+								<li class="side-item">
+									<a href="#" class="site-name">THINIKIVATE LEARING</a>
+								</li>
+								<li class="side-item">
+									<a href="testside.html" class="side-link">SIDEBAR</a>
+								</li>
+								<li class="side-item">
+									<a href="#About" class="side-link">ABOUT</a>
+								</li>
+								<li class="side-item">
+									<a href="#Products" class="side-link">PRODUCTS</a>
+								</li>
+								<li class="side-item">
+									<a href="#Values" class="side-link">OUR VALUES</a>
+								</li>
+								<li class="side-item">
+									<a href="#Careers" class="side-link">CAREERS</a>
+								</li>
+								<li class="side-item">
+									<a href="#ContactUs" class="side-link">CONTACT US</a>
+								</li>
+								<li class="side-item">
+									<a href="login.html" class="side-link">LOGIN</a>
+								</li>
+								<li class="side-item">
+									<a href="#" class="side-link">
+										<i class="fa fa-facebook-official"></i>
+										<i class="fa fa-twitter"></i>
+										<i class="fa fa-instagram"></i>
+										<i class="fa fa-youtube"></i>
+									</a> 
+								</li>
+							</ul>
+							<br>
+							<button type="button" onclick="myFnc(this)" style="width:30px;height:30px;"><i class="fa fa-times" aria-hidden="true"></i></button>
+						</nav>
+					</div> 
+				</div>
+                    <!--<div class="main-menu hidden-md-down">
+                        <ul class="menu-list">
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Home</a></li>
+							<li><a class="nav-link" href="side.html" data-target="side.html">Side</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Products">Services</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#About">About</a></li>
+							<li><a class="nav-link" href="javascript:void(0)" data-target="#Values">Our Values</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Careers">Careers</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#ContactUs">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-menu hidden-lg-up">
+                    <ul class="mobile-menu-list">
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Home</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#Services">Services</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#About">About</a></li>
+						<li><a class="nav-link" href="javascript:void(0)" data-target="#Values">Our Values</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#Careers">Careers</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#ContactUs">Contact</a></li>
+                    </ul>
+                </div>-->
+            </nav>
+        </header> 
+        <!-- Header ends here -->
+		
+		<!-- <div class="container">
+		<nav class="sidebar" id="sideID">
+			<button type="button" onclick="myFnc(this)" class="toggle-collapse" id="toggle-button">
+			<span class="toggle-icon"></span>
+			</button>
+			<ul class="side-nav">
+				<li class="side-item">
+					<a href="#" class="site-name">Daily Tution</a>
+				</li>
+				<li class="side-item">
+					<a href="#" class="side-link">Home</a>
+				</li>
+				<li class="side-item">
+					<a href="#" class="side-link">Blog</a>
+				</li>
+				<li class="side-item">
+					<a href="#" class="side-link">Features</a>
+				</li>
+				<li class="side-item">
+					<a href="#" class="side-link">Pricing</a>
+				</li>
+				<li class="side-item">
+					<a href="#" class="side-link">Contact Us</a>
+				</li>
+				<li class="side-item">
+					<a href="#" class="side-link">
+						<i class="fa fa-facebook-official"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-instagram"></i>
+						<i class="fa fa-youtube"></i>
+				</li>
+			</ul>
+		</nav>
+	</div> -->
+		
+		
+		
+		
+        <!-- Banner starts here -->
+        <section id="HeroBanner">
+            <div class="hero-content">
+                <h1>Welcome to Thinkivate Learning</h1>
+                <p>Smart learning; Digital learning</p>
+                <a href="#ContactUs" class="hero-cta">Contact Us</a>
+            </div>
+        </section>
+        <!-- Banner ends here -->
+								
+        
+        <!-- About Us section starts here -->
+        <section id="About">
+            <div class="container">
+                <div class="about-wrapper">
+                    <h2 style="color:#d6b644;">ABOUT US</h2>
+                    <p style="text-align:justify;color:white;">Thinkivate Learning Private Limited is a Private Company. It is inolved in Higher education Includes post-secondary/senior secondary sub-degree level education that leads to university degree or equivalent. Our WIW App helps the students to perform excellent in their exmas. They explain the concept with visual methods along with fun stories to follow with. We are providing a very interesting and enjoyfull learning application. This app describe every topic in the best way.Make your studies easy and enjoyfull..</p>
+                </div>
+            </div>
+        </section>
+        <!-- About Us section ends here -->
+		
+		<!-- Introducing WIW App -->
+		<section id="Products">
+		<header class='mainHeader1'>
+			<div class='container'>
+				<div class="block-heading">
+                    <h2 style="color:#d6b644;">SERVICES</h2>
+                    <!--<p>Thinkivate Learning Provide services.</p>-->
+                </div>
+				<div class='animatedParent' data-sequence='500' >
+					<h3 class='animated growIn slower' style="color:white;" data-id='1'>WIW APP</h3>
+					<p class='animated bounceInRight slower'  data-id='2'>Introducing WIW App which makes your education more fun.</p>
+					<div class='buttons-inline animated bounceInLeft slower'   data-id='3'><a class="btn btn-primary" href="animateimg.html">Learn More About WIW App</a></div><br>
+					<div class='buttons-inline animated bounceInLeft slower'   data-id='3'><a class="btn btn-primary" href="animateimg.html">Download</a></div>
+					<!--<div class='buttons-inline animated bounceInRight slower' data-id='4'><a class='btn btn-default' href='#'>Download!</a></div>-->
+				</div>
+			</div>
+		</header>
+		</section>
+		<!-- section ends here -->
+						
+		<!-- Portfolio section starts here -->
+        <section id="Portfolio">
+            <div class="container">
+                <div class="block-heading">
+                    <h3 style="color:#FFFFFF">Screenshots</h3>
+                   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+                </div>
+                <div class="portfolio-wrapper clearfix">
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/Screenshots/scr5.png">
+                    <img src="images/Screenshots/scr5.png" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Home</h5>
+                            <div class="p-desc">
+                                <div>Home Page</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/Screenshots/scr6.png">
+                    <img src="images/Screenshots/scr6.png" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Title</h5>
+                           <div class="p-desc">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/Screenshots/scr5.png">
+                    <img src="images/Screenshots/scr5.png" alt="p-one">
+                    <div class="hover-cont-wrap">
+                       <div class="hover-cont-block">
+                           <h5 class="p-title">Title</h5>
+                           <div class="p-desc">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/Screenshots/scr5.png">
+                    <img src="images/Screenshots/scr5.png" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Title</h5>
+                           <div class="p-desc">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-five.jpg">
+                    <img src="images/p-five.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Title</h5>
+                           <div class="p-desc">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-six.jpg">
+                    <img src="images/p-six.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Title</h5>
+                           <div class="p-desc">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-one.jpg">
+                    <img src="images/p-one.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Title</h5>
+                           <div class="p-desc">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpg">
+                    <img src="images/p-two.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Title</h5>
+                           <div class="p-desc">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.jpg">
+                    <img src="images/p-three.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                            <h5 class="p-title">Title</h5>
+                            <div class="p-desc">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                </div>
+				<!-- Promo Video -->
+				<!--<div class="block-heading">-->
+                <h3 style="color:#FFFFFF;text-align:center;">View Videos</h3>
+        		<video id="myVideo" width="320" height="300" controls>
+					<source src="videos/mov_bbb.mp4" type="video/mp4">
+					<source src="videos/mov_bbb.ogg" type="video/ogg">
+					Your browser does not support HTML5 video.
+				</video>
+				<video id="myVideo" width="320" height="300" controls>
+					<source src="videos/1280.mp4" type="video/mp4">
+					<source src="videos/1280.ogg" type="video/ogg">
+					Your browser does not support HTML5 video.
+				</video>
+				<video id="myVideo" width="320" height="300" controls>
+					<source src="videos/dolbycanyon.mp4" type="video/mp4">
+					<source src="videos/dolbycanyon.ogg" type="video/ogg">
+					Your browser does not support HTML5 video.
+				</video>
+				<script>
+					var vid = document.getElementById("myVideo");
+					function myFunction() { 
+					alert(vid.audioTracks.length);
+				} 
+				</script> 
+				<!-- Promo Video ends here -->
+		</div>
+		</section>
+        <!-- Portfolio section ends here -->
+		
+		<!-- OURVALUES section starts here -->
+		<section id="Values">
+            <div class="container">
+               <!-- <div class="block-heading">
+                    <h2>OUR VALUES</h2>
+                    <p>Thinkivate Learning Values</p>
+                </div> -->
+				<br><br><br>
+				<div class="block-heading">
+                    <h2 style='color:#d6b644'>OUR VALUES</h2>
+                    <p style='color:white;'>Thinkivate Learning Values</p>
+                </div>
+				<div class="row animate-box">
+					<div class="container" >
+						<!--<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+							<h1 class="heading-section" style="text-align:center">Our Values</h1>
+						</div> -->
+					<div class="row services text-center" >
+						<div class="view view-ninth">
+							<img src="images/mission7.jpg" />
+							<div class="mask mask-1"></div>
+							<div class="mask mask-2"></div>
+						<div class="content">
+							<h2>Our Mission</h2>
+							<p>is to achieve the reputation of a quality, high standard and reliable educational solution and service provider Company</p>
+						</div>
+						</div> 
+						<div class="view view-ninth">
+							<img src="images/vision1.jpg" />
+							<div class="mask mask-1"></div>
+							<div class="mask mask-2"></div>
+						<div class="content">
+							<h2>Our Vision</h2>
+							<p>is to achieve 100% customer satisfaction by delivering quality products and services at an affordable cost.</p>
+						</div>
+						</div> 
+						<div class="view view-ninth">
+							<img src="images/future2.jpg"/>
+							<div class="mask mask-1"></div>
+							<div class="mask mask-2"></div>
+						<div class="content">
+							<h2>Future Plan</h2>
+							<p>is to become and entity in technology based corporate solutions</p>
+						</div>
+						</div> 
+					</div>
+					</div>
+				</div>
+            </div>
+        </section>
+		<!-- OURVALUES section ends here -->
+		
+		<!-- Careerss section starts here -->
+        <section id="Careers">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 style="color:#d6b644">CAREERS</h2>
+                    <p style="color:#FFFFFF">Join us with Thinkivate Learning.</p>
+                </div>
+            	<table>
+				<tr>
+					<th>Position</th>
+					<th>Location</th>
+					<th>Positions Available</th>
+					<th>Apply Now</th>
+				</tr>
+				<tr>
+					<td>SME</td>
+					<td>Calicut</td>
+					<td>4</td>
+					<td><button class="cm-btn"
+							style="font-size:15px;  width:100px; height:25px;"
+							onclick="document.getElementById('cm-popup').style.display='block'">Apply</td>
+				</tr>
+				<tr>
+					<td>Illusrator Artist</td>
+					<td>Calicut</td>
+					<td>1</td>
+					<td><button class="cm-btn"
+							style="font-size:15px;  width:100px; height:25px;"
+							onclick="document.getElementById('cm-popup2').style.display='block'">Apply</td>
+				</tr>
+				<tr>
+					<td>Motion Graphic Animators</td>
+					<td>Calicut</td>
+					<td>3</td>
+					<td><button class="cm-btn"
+							style="font-size:15px;  width:100px; height:25px;"
+							onclick="document.getElementById('cm-popup1').style.display='block'">Apply</td>
+				</tr>
+			</table>
+            </div>
+        </section>
+		<br><br>
+		<!-- Pop up window 1 -->
+		<div id="cm-popup" style="background-color:white;">
+		<!-- header of the pop up window -->
+			<h2
+				style="width:100%;color:white;text-align:center;padding:1%;background:#000000;color:#FFD700;">
+				Subject Matter Expert
+				<button style="margin-left:500px;" onclick="document.getElementById('cm-popup').style.display='none'"> <i class="fa fa-window-close" aria-hidden="true"></i></button>
+			</h2>
+			<div class="container">
+				<div class="about-wrapper">
+					<h4>Job Role :</h4>
+					<p style="text-align:justify; color:black;">Subject/Curriculum oriented content/script writing for video based learning.</p>
+					<h4>Must have :</h4>
+					<p style="text-align:justify; color:black;">Knowledge of subject. Language skill. Creative thinking</p>
+					<h4>Qualification :</h4>
+					<p style="text-align:justify; color:black;">Grauation</p>
+				</div>
+				<div class="col-md-6 animate-box">
+					<form action="contact.php" method="POST">
+						<input type="text" name="yname" class="form-control" placeholder="Your name" required><br>
+						<input type="number" name="yphno" class="form-control" placeholder="Phone Number" required><br>
+						<input type="email" name="yemail" class="form-control" placeholder="Your email address" required><br>
+						<input type="text" name="title"><br>
+						<label>Upload Resume</label>
+						<input type="File" name="file">
+						<button
+							class="cm-btn"
+							style="bottom:5%;left:2%;width:80px; height:40px;">
+							SUBMIT
+						</button>
+						<!-- pop up window close btn -->
+						<button
+						class="cm-btn"
+						style="bottom:5%;left:2%;width:80px; height:40px;"
+						onclick="document.getElementById('cm-popup').style.display='none'">
+						CLOSE
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Pop up window 2 -->
+		<div id="cm-popup1" style="background-color:white;">
+		<!-- header of the pop up window -->
+			<h2
+				style="width:100%;color:white;text-align:center;padding:1%;background:#000000;color:#FFD700;">
+				Motion Graphic Animators
+				<button style="margin-left:500px;" onclick="document.getElementById('cm-popup1').style.display='none'"> <i class="fa fa-window-close" aria-hidden="true"></i></button>
+			</h2>
+			<div class="container">
+				<div class="about-wrapper">
+					<h4>Job Role :</h4>
+					<p style="text-align:justify; color:black;">Edit and create motion graphic illustrations and animations.</p>
+					<h4>Must have :</h4>
+					<p style="text-align:justify; color:black;">Proficient in Adobe Premiere Pro CC, After Effects CC, Audition CC.</p>
+					<h4>Qualification :</h4>
+					<p style="text-align:justify; color:black;">Your Creativity</p>
+				</div>
+				<div class="col-md-6 animate-box">
+					<form action="contact.php" method="POST">
+						<input type="text" name="yname" class="form-control" placeholder="Your name" required><br>
+						<input type="number" name="yphno" class="form-control" placeholder="Phone Number" required><br>
+						<input type="email" name="yemail" class="form-control" placeholder="Your email address" required><br>
+						<input type="text" name="title"><br>
+						<label>Upload Resume</label>
+						<input type="File" name="file">
+						<button
+							class="cm-btn"
+							style="bottom:5%;left:2%;width:80px; height:40px;">
+							SUBMIT
+						</button>
+						<!-- pop up window close btn -->
+						<button
+						class="cm-btn"
+						style="bottom:5%;left:2%;width:80px; height:40px;"
+						onclick="document.getElementById('cm-popup1').style.display='none'">
+						CLOSE
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Pop up window 3 -->
+		<div id="cm-popup2" style="background-color:white;">
+		<!-- header of the pop up window -->
+			<h2
+				style="width:100%;color:white;text-align:center;padding:1%;background:#000000;color:#FFD700;">
+				Illusrator Artist
+				<button style="margin-left:500px;" onclick="document.getElementById('cm-popup2').style.display='none'"> <i class="fa fa-window-close" aria-hidden="true"></i></button>
+			</h2>
+			<div class="container">
+				<div class="about-wrapper">
+					<h4>Job Role :</h4>
+					<p style="text-align:justify; color:black;">Edit and create graphic illustrations.</p>
+					<h4>Must have :</h4>
+					<p style="text-align:justify; color:black;">Proficient in Adobe illustrstor CC.</p>
+					<h4>Qualification :</h4>
+					<p style="text-align:justify; color:black;">Your Creativity</p>
+				</div>
+				<div class="col-md-6 animate-box">
+					<form action="contact.php" method="POST">
+						<input type="text" name="yname" class="form-control" placeholder="Your name" required><br>
+						<input type="number" name="yphno" class="form-control" placeholder="Phone Number" required><br>
+						<input type="email" name="yemail" class="form-control" placeholder="Your email address" required><br>
+						<input type="text" name="title"><br>
+						<label>Upload Resume</label>
+						<input type="File" name="file">
+						<button
+							class="cm-btn"
+							style="bottom:5%;left:2%;width:80px; height:25px;">
+							SUBMIT
+						</button>
+						<!-- pop up window close btn -->
+						<button
+						class="cm-btn"
+						style="bottom:5%;left:2%;width:80px; height:40px;"
+						onclick="document.getElementById('cm-popup2').style.display='none'">
+						CLOSE
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<?
+		include 'connection.php';
+		$db="thinkivatedb";
+		if(isset($_POST["submit"]))
+		{
+			$title=$POST["title"];
+			$pname=rand(1000,10000)."_".$_FILES["file"]["name"];
+			$tname=$_FILES["files"]["tmp_name"];
+			$uploads_dir='/images';
+			move_uploaded_file($tname,$uploads_dir.'/'.$pname);
+			$sql="INSERT into fileup(title,images) VALUES ('$title','$pname')";
+			if(mysqli_query($conn,$sql)) {
+				echo "File Successfully uploaded";
+			}
+			else {
+				echo "Error";
+			}
+		}
+		?>
+		<!--careers section ends -->
+		
+		<section id="Testimonial">
+          <div class="testimonial-wrap">
+          <div class="container">
+            <div class="block-heading">
+              <h2>What Clients Say About Us</h2>
+            </div>
+            <ul class="testimonial-slider">
+              <li>" I would like to thank Click and the team for the fantastic work<br> on content writing for my site. "</li>
+              <li>" I'd say that the team is excellent and it is some of the best service<br> I have received both online and offline in a long time. "</li>
+              <li>" It's been great working with you. The content is also great. I can certainly recommend your<br> services to others as cost effective services. "</li>
+            </ul>
+          </div>
+        </div>
+        </section>
+        <!-- Contact us section starts here -->
+        <section id="ContactUs">
+            <div class="container contact-container">
+                <h3 class="contact-title">Get In Touch</h3>
+                <div class="contact-outer-wrapper">
+                    <div class="address-block">
+                        <p class="add-title">Contact Details</p>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span> <span class="c-info">3rd Floor Msons Arcade,Cherrotty Road,Calicut</span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span> <span class="c-info">0495-2760366</span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span> <span class="c-info">leadusprofessionals@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <p class="add-title">Send Us Message</p>
+                        <form>
+                            <div class="fname floating-label">
+                                <input type="text" class="floating-input" name="full name" id="full-name-field" />
+                                <label for="full-name-field">Full Name</label>
+                            </div>
+                            <div class="email floating-label">
+                                <input type="email" class="floating-input" name="email" id="mail-field" />
+                                <label for="mail-field">Email</label>
+                            </div>
+                            <div class="contact floating-label">
+                                <input type="tel" class="floating-input" name="contact" id="contact-us-field" />
+                                <label for="contact-us-field">Contact</label>
+                            </div>
+                            <div class="company floating-label">
+                                <input type="text" class="floating-input" name="company" id="company-field" />
+                                <label for="company-field">Company</label>
+                            </div>
+                            <div class="user-msg floating-label">
+                                <textarea class="floating-input" name="user message" id="user-msg-field"></textarea>
+                                <label for="user-msg-field" class="msg-label">Your Message</label>
+                            </div>
+                            <div class="submit-btn">
+                                <button type="submit" style="color:#000000">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact us section ends here -->
+        <!-- Footer section starts here -->
+        <footer id="Footer">
+            <div class="container">
+                <div class="social-share">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo-wrap">
+                  
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section ends here -->
+    </section>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+	
+	<!-- for sidebar -->
+	<script>
+		/*function myFnc(e) {
+            e.classList.toggle("show");
+            
+            var elem = document.getElementById("navID"),
+            Style = window.getComputedStyle(elem),
+            right = Style.getPropertyValue("right");
+                
+            
+            if(right == "0px"){
+                elem.style.right = "-260px";
+            }else {
+                elem.style.right = "0px";
+            }
+                
+            
+        }*/
+        
+        function myFnc(e){
+                e.classList.toggle("show");
+ 
+                var elem = document.getElementById("sideID"),
+                style = window.getComputedStyle(elem),
+                top = style.getPropertyValue("right");
+ 
+                if(top == "0px"){
+                    elem.style.right = "-260px";
+                }else{
+                    elem.style.right = "0px";
+                }
+ 
+            }
+	</script>
+</body>
+</html>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
