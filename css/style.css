@@ -620,9 +620,10 @@ ul, li {
 	color:#d6b644;
 	transition: top 0.2s ease-in-out;
 }
-#ContactUs .submit-btn {
+#ContactUs .submit-btn  {
 	text-align: center;
 }
+
 #ContactUs .submit-btn button {
 	font-size: 16px;
 	border: 0;
@@ -632,6 +633,7 @@ ul, li {
 	padding: 10px 20px;
 	cursor: pointer;
 	outline: 0;
+	color:#000000;
 }
 #ContactUs .submit-btn button:hover {
 	background-color: rgba(214,182,68);
