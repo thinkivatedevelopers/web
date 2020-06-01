@@ -4,7 +4,8 @@
     right: -260px;
     width:260px;
     height: 550px;
-    background-color:#1C2833 ;
+    background-color: black;
+    opacity: 0.8;
     text-align:center;
     transition:0.800s ease;
 }
@@ -25,7 +26,7 @@
     flex: 1;
 }
 .side-item .side-link:hover {
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
 }
 .toggle-collapse {
