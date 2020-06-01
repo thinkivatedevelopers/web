@@ -379,13 +379,12 @@ ul, li {
 	margin: 0;
 }
 #Values {
-	/*background: url(../images/bb1.jpg)no-repeat 0 0 / cover;*/
-	background: url(../images/bb3.jpg)no-repeat 0 0 / cover;
+	/*background: url(../images/bb1.jpg)no-repeat 0 0 / cover;
+	background: url(../images/bb3.jpg)no-repeat 0 0 / cover; */
 	padding: 50px 0;
 }
 #Careers {
 	padding: 80px 0;
-	/*background: url(../images/bb4.jpg)no-repeat 0 0 / cover;*/
 }
 /* porfolio style goes here */
 #Portfolio {
