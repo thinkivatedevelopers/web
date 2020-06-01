@@ -11,3 +11,11 @@
     height: 250px;
   }
   .column:hover { background-color: slategray;}
+.column .fa {
+    font-size: 50px;
+    padding: 0px 0px 25px 0px;
+  }
+ .career {
+   text-align: center;
+ }
+
