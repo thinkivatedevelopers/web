@@ -1,21 +1,12 @@
 * {
     box-sizing: border-box;
   }
- /* Create three equal columns that floats next to each other */
-  .column {
-   text-align: justify;
-    color: white;
-    float: left;
-    width: 33.3%;
-    padding: 30px;
-    height: 250px;
-  }
-  .column:hover { background-color: slategray;}
-.column .fa {
-    font-size: 50px;
-    padding: 0px 0px 25px 0px;
-  }
- .value {
-   text-align: center;
- }
-
+.card1 {
+  background-color: black;
+  color: white;
+}
+.card1:hover { background-color: slategray;}
+.card1 .value {
+  text-align: center;
+  font-size: 50px;
+}
