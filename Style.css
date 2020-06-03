@@ -91,3 +91,7 @@ body {
 	background-color:black;
 	color: white;
 }
+
+.main-color {
+	color: #d6b644 !important;
+}
