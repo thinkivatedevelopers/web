@@ -83,9 +83,5 @@
     /*padding: .5em;*/
     padding: 10px;
 }
-.side-item:hover:last-child .side-link {
-    background-color:white;
-    color: black;
-}
 
 /* style for sidebar ends */

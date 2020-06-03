@@ -720,7 +720,10 @@ ul, li {
 	color: #fff;
 	padding: 0 10px;
 }
-#Footer .social-share ul li a:hover .fa-facebook {
+#Footer .social-share ul li a:hover {
+	color: #d39e00; 
+}
+/*#Footer .social-share ul li a:hover .fa-facebook {
 	color: #3b5998;
 }
 #Footer .social-share ul li a:hover .fa-twitter {
@@ -731,7 +734,8 @@ ul, li {
 }
 #Footer .social-share ul li a:hover .fa-instagram {
 	color: #fb3958;
-}
+} */
+
 /* mainHeader1 starts */
 .mainHeader1{
 	display: table;
