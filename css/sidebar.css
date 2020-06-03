@@ -3,11 +3,11 @@
     position: absolute;
     right: -260px;
     width:260px;
-    height: 550px;
+    height: fit-content;
     background-color: black;
     opacity: 0.8;
     text-align:center;
-    transition:0.800s ease;
+    transition:0.300s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .sidebar .side-nav {
     list-style-type: none;
@@ -20,14 +20,17 @@
 .side-item .side-link {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px;
     flex: 1;
 }
 .side-item .side-link:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.068);
+    /* color: black; */
+    font-size: 21px;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-property: 'font-size';
 }
 .toggle-collapse {
     float: left;
@@ -38,41 +41,7 @@
     border: 0px;
     background: transparent;
 }
-/* ....toggle icon ...*/
-.toggle-icon,
-.toggle-icon::before,
-.toggle-icon::after{
-    content:"";
-    width: 30px;
-    height: 3px;
-    position: fixed;
-    background-color: #FFFFFF;
-    border-radius: 2em;
-    border: 1px solid #FFFFFF;
-    cursor: pointer;
-    /*transition: 0.800s ease;*/
-    margin-top: 0.8em; -->
-}
-.toggle-icon::before {
-    position: absolute;
-    left: -1px;
-    margin-top: -0.8em;
-}
-.toggle-icon::after{
-    position: absolute;
-    left: -1px;
-    margin-top: 0.6em;
-    width: 30px;
-}
-.toggle-icon{
-    width: 30px;
-}
-.show .toggle-icon::after{
-    width: 30px;
-}
-.show .toggle-icon {
-    width: 30px;
-}
+
 .side-item .site-name {
     text-decoration: none;
     padding: 20px;
