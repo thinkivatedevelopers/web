@@ -50,8 +50,7 @@
     border-radius: 2em;
     border: 1px solid #FFFFFF;
     cursor: pointer;
-    /*transition: 0.800s ease;*/
-    margin-top: 0.8em; -->
+    margin-top: 0.8em; 
 }
 .toggle-icon::before {
     position: absolute;
@@ -66,7 +65,7 @@
 }
 .toggle-icon{
     width: 30px;
-}
+} 
 .show .toggle-icon::after{
     width: 30px;
 }
