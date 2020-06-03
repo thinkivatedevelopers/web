@@ -89,6 +89,18 @@ ul, li {
 .block-heading {
 	text-align: center;
 	margin-bottom: 50px;
+	
+}
+.block-heading p {
+  color:#ffff;
+  font-size: 25px !important;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+	
+}
+.block-heading h1 {
+  color:#d6b644 !important;
 }
 .block-heading p:last-child {
 	margin: 0;
@@ -469,6 +481,18 @@ ul, li {
 #About .about-wrapper p:last-child {
 	margin: 0;
 }
+.about-wrapper h1{
+	color:#d6b644 !important;
+}
+.about-wrapper p {
+
+	text-align:justify !important;
+	color:white !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 18px !important;
+	/* font-style: italic !important; */
+}
+
 #About:after {
 	content: '';
 	position: absolute;
@@ -496,6 +520,11 @@ ul, li {
 }
 #Testimonial .testimonial-slider {
 	text-align: center;
+	
+}
+.testimonial-slider li{
+	font-size: 19px !important;
+	font-style: italic;
 }
 .bx-wrapper {
 	box-shadow: none;
@@ -515,10 +544,10 @@ ul, li {
 }
 #ContactUs .contact-title {
 	font-size: 30px;
-	color: #000;
+	color:#d6b644 !important;
 	text-align: center;
 	margin: 0 0 30px;
-	color: #FFFFFF;
+	
 }
 #ContactUs .contact-outer-wrapper {
 	width: 100%;
@@ -623,21 +652,36 @@ ul, li {
 	text-align: center;
 }
 
+.learn-more-button{
+	font-size: 16px;
+	border: 0;
+	border-radius: 8px;
+	background-color: #d6b644 !important;
+	color:black !important;
+	padding: 10px 20px;
+	cursor: pointer;
+	outline:0;
+	font-weight: bold;
+}
+.learn-more-button:hover {
+	background-color:#fff !important;
+	color: black !important;
+}
+
 #ContactUs .submit-btn button {
 	font-size: 16px;
 	border: 0;
-	border-radius: 15px;
-	background-color:black;
-	color: white;
+	border-radius: 5px;
+	background-color: #d6b644 !important;
+	color:black !important;
 	padding: 10px 20px;
 	cursor: pointer;
-	outline: 0;
-	color: white;
+	outline:0;
 	font-weight: bold;
 }
 #ContactUs .submit-btn button:hover {
-	background-color: rgba(214,182,68);
-	color: black;
+	background-color:#fff !important;
+	color: black !important;
 }
 /* footer style goes here */
 #Footer {
