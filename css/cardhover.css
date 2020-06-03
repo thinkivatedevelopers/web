@@ -1,8 +1,6 @@
 body{
-    font-family:  Calibri, 'Trebuchet MS', sans-serif;
-    
-
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .card {
     position: relative;
     display: inline-block;
