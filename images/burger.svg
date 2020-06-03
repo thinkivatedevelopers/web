@@ -1,0 +1,14 @@
+<svg 
+    id="Layer_1" 
+    data-name="Layer 1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 109 75"
+    height="20px">
+    <defs>
+        <style>.cls-1{fill:#d6b644;}</style>
+    </defs>
+    <title>burger</title>
+    <rect class="cls-1" width="109" height="17" rx="8.5" ry="8.5"/>
+    <rect class="cls-1" y="29" width="109" height="17" rx="8.5" ry="8.5"/>
+    <rect class="cls-1" y="58" width="109" height="17" rx="8.5" ry="8.5"/>
+</svg>

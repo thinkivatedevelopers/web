@@ -3,11 +3,11 @@
     position: absolute;
     right: -260px;
     width:260px;
-    height: 550px;
+    height: fit-content;
     background-color: black;
     opacity: 0.8;
     text-align:center;
-    transition:0.800s ease;
+    transition:0.300s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .sidebar .side-nav {
     list-style-type: none;
@@ -20,14 +20,17 @@
 .side-item .side-link {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px;
     flex: 1;
 }
 .side-item .side-link:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.068);
+    /* color: black; */
+    font-size: 21px;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-property: 'font-size';
 }
 .toggle-collapse {
     float: left;
