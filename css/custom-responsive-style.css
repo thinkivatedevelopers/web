@@ -66,14 +66,14 @@
     transform: translateY(0%); 
   }
   /* about us style */
-  #About .about-wrapper {
+  /* #About .about-wrapper {
     width: 100%;
     text-align: center;
     padding: 50px 0;
   }
   #About:after {
     display: none;
-  }
+  } */
   /* testimonial slider style */
   #Testimonial .testimonial-slider li br {
     display: none;
@@ -174,15 +174,7 @@
     top: 0;
     transform: translateY(0%);
   }
-  /* about us section style */
-  #About .about-wrapper {
-    width: 100%;
-    text-align: center;
-    padding: 80px 0;
-  }
-  #About:after {
-    display: none;
-  }
+
   /* testmonial slider style*/
   #Testimonial .testimonial-slider li br {
     display: none;

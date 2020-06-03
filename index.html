@@ -6,10 +6,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+	
+	<meta name="theme-color" content="#0000">
+	<meta name="description" content="Thinkivate Learning Pvt Ltd, Educational institution in Kozhikode, Kerala">
+	<meta property="og:image" content="apple-touch-icon.png"/>
+	<meta property="og:title" content="Thinkivate Learning Pvt Ltd"/>
+	<meta property="og:description" content="Thinkivate Learning Pvt Ltd, Educational institution in Kozhikode, Kerala" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,7 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="css/values.css">
 	<link rel="stylesheet" type="text/css" href="css/cardhover.css">
 	<link rel="stylesheet" type="text/css" href="css/custom-responsive-style.css">
-	<link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 	<style>
 		/* Make the image fully responsive */
@@ -48,33 +55,30 @@
 								alt="Thinkivate Learning"></a>
 					</div>
 					<!--<a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>-->
-						<nav class="sidebar" id="sideID">
-							 <button type="button" onclick="myFnc(this)" class="toggle-collapse" id="toggle-button">
-								<span class="toggle-icon"></span>
-							</button> 
+
+						<nav class="sidebar pt-3" id="sideID">
+							<button type="button" onclick="myFnc(this)" class="toggle-collapse" id="toggle-button">
+								<img src="images/burger.svg" alt="">
+							</button>
+              
 							<ul class="side-nav">
-								<li class="side-item">
-									<a href="#" class="site-name">THINIKIVATE LEARING</a>
-								</li>
-								<li class="side-item">
+								<li class="side-item" onclick="myFnc(this)">
 									<a href="#About" class="side-link">ABOUT</a>
 								</li>
-								<li class="side-item">
+								<li class="side-item" onclick="myFnc(this)">
 									<a href="#Products" class="side-link">PRODUCTS</a>
 								</li>
-								<li class="side-item">
+								<li class="side-item" onclick="myFnc(this)">
 									<a href="#Values" class="side-link">OUR VALUES</a>
 								</li>
-								<li class="side-item">
+								<li class="side-item" onclick="myFnc(this)">
 									<a href="#Careers" class="side-link">CAREERS</a>
 								</li>
-								<li class="side-item">
+								<li class="side-item" onclick="myFnc(this)">
 									<a href="#ContactUs" class="side-link">CONTACT US</a>
 								</li>
 							</ul>
 							<br>
-							<button type="button" onclick="myFnc(this)" style="width:30px;height:30px;"><i
-									class="fa fa-times" aria-hidden="true"></i></button>
 						</nav>
 				</div>
 				<!--<div class="main-menu hidden-md-down">
@@ -149,23 +153,30 @@
 
 
 		<!-- About Us section starts here -->
-		<section id="About">
+		<section id="About" style="padding-top: 140px; padding-bottom: 40px; background-color: rgb(7, 7, 7);">
 			<div class="container">
-				<div class="about-wrapper">
-					<h1>ABOUT US</h1>
-					<p>Thinkivate Learning Private Limited is a Private Company.
-						It is inolved in Higher education Includes post-secondary/senior secondary sub-degree level
-						education that leads to university degree or equivalent. Our WIW App helps the students to
-						perform excellent in their exmas. They explain the concept with visual methods along with fun
-						stories to follow with. We are providing a very interesting and enjoyfull learning application.
-						This app describe every topic in the best way.Make your studies easy and enjoyfull..</p>
+				<div class="row">
+					<div class="col-md-6 text-light">
+						<h1 style="color: #d6b644;">ABOUT US</h1>
+						<p class="lead">Thinkivate Learning Private Limited is a Private Company.
+							It is inolved in Higher education Includes post-secondary/senior secondary sub-degree level
+							education that leads to university degree or equivalent. Our WIW App helps the students to
+							perform excellent in their exmas. They explain the concept with visual methods along with fun
+							stories to follow with. We are providing a very interesting and enjoyfull learning application.
+							This app describe every topic in the best way.Make your studies easy and enjoyfull..</p>
+					</div>
+					<div class="col-md-6">
+						<img class="img-fluid" src="images/about.png" alt="">
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- About Us section ends here -->
 
+		
+
 		<!-- Introducing WIW App -->
-		<section id="Products">
+		<section id="Products" style="padding-top: 50px; padding-bottom: 10px;" >
 			<!-- <header class='mainHeader1'>
 				<div class='container'>
 					<div class="block-heading">
@@ -348,7 +359,7 @@
 	 Portfolio section ends here -->
 
 	 <!-- OUR VALUES section starts -->
-		<section id="Values">
+		<section id="Values" style="padding-top: 110px; padding-bottom: 90px;">
 			<div class="container">
 				<div class="block-heading">
 					<h1>OUR VALUES</h1>
@@ -446,17 +457,22 @@
 		<section id="Testimonial">
 			<div class="testimonial-wrap">
 				<div class="container">
-					<div class="block-heading">
-						<h1>WHAT CLIENTS SAY ABOUT US</h1>
+
+					<div class="mx-auto">
+						<div class="block-heading">
+							<h1>WHAT CLIENTS SAY ABOUT US</h1>
+						</div>
+						<ul class="testimonial-slider">
+							<li>" I would like to thank Click and the team for the fantastic work<br> on content writing for
+								my site. "</li>
+							<li>" I'd say that the team is excellent and it is some of the best service<br> I have received
+								both online and offline in a long time. "</li>
+							<li>" It's been great working with you. The content is also great. I can certainly recommend
+								your<br> services to others as cost effective services. "</li>
+						</ul>
 					</div>
-					<ul class="testimonial-slider">
-						<li>" I would like to thank Click and the team for the fantastic work<br> on content writing for
-							my site. "</li>
-						<li>" I'd say that the team is excellent and it is some of the best service<br> I have received
-							both online and offline in a long time. "</li>
-						<li>" It's been great working with you. The content is also great. I can certainly recommend
-							your<br> services to others as cost effective services. "</li>
-					</ul>
+					
+					
 				</div>
 			</div>
 		</section>
