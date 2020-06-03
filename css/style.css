@@ -333,7 +333,7 @@ ul, li {
 }
 /* services section style goes here */
 #Services {
-	padding: 80px 0 50px;
+	padding: 80px 0;
 	background-color: #fafafa;
 }
 #Services .block-heading {
@@ -392,10 +392,11 @@ ul, li {
 #Services .each-service p:last-child {
 	margin: 0;
 }
+#Products{
+	padding: 80px 0;
+}
 #Values {
-	/*background: url(../images/bb1.jpg)no-repeat 0 0 / cover;
-	background: url(../images/bb3.jpg)no-repeat 0 0 / cover; */
-	padding: 50px 0;
+	padding: 80px 0;
 }
 #Careers {
 	padding: 80px 0;
