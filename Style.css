@@ -95,3 +95,8 @@ body {
 .main-color {
 	color: #d6b644 !important;
 }
+
+.section-global {
+	padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
