@@ -116,8 +116,9 @@ ul, li {
 	z-index: 9;
 }
 #Header.header-fixed {
-	background: rgba(0, 0, 0, 0.8);
+	background: black;
 	transition: all 0.3s ease-in-out;
+	height: 70px;
 }
 #Header.header-fixed .site-logo-wrap {
 	padding: 15px 0;
