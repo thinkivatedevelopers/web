@@ -548,7 +548,9 @@ ul, li {
 	font-size: 22px;
 	font-weight: bold;
 	margin: 0 0 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #FFFFFF;
+
 }
 #ContactUs .c-detail {
 	margin-bottom: 20px;
@@ -566,6 +568,7 @@ ul, li {
 	width: 90%;
 	display: inline-block;
 	vertical-align: top;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #FFFFFF;
 }
 #ContactUs .c-detail span .fa {
