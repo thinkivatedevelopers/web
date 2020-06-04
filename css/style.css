@@ -486,7 +486,7 @@ ul, li {
 }
 #Testimonial .testimonial-wrap {
 	display: table-cell;
-	background-color: rgba(10,40,60,0.1);
+	/* background-color: rgba(10,40,60,0.1); */
 	color: #fff;
 	padding: 80px 0;
 }
