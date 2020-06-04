@@ -478,7 +478,7 @@ ul, li {
 #Testimonial {
 	width: 100%;
 	display: table;
-	background: url(../images/wills.jpg) no-repeat 0 30% / cover;
+	background: url(../images/testi\ bg.jpg) no-repeat 0 30% / cover;
 	background-attachment: fixed;
 }
 #Testimonial .block-heading h2 {
@@ -598,7 +598,8 @@ ul, li {
 	color: white;
 	width: 100%;
 	border: 0;
-	border-bottom: 1px solid #999999;
+	border-bottom: 1px  #999999;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 	box-shadow: none;
 	background-color: transparent;
 	padding-top: 3px;
