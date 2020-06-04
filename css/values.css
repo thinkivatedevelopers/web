@@ -30,4 +30,19 @@
 .value-icon {
   font-size: 40px;
   color: #d6b644 ;
+  
 }
+
+.animation:hover .value-icon,
+.animation .value-icon-animated {
+    display: none;
+}
+.animation:hover .value-icon-animated {
+    display: block !important;
+}
+.value-icon-animated{
+  font-size: 40px;
+  color: #d6b644 ;
+
+}
+
