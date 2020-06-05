@@ -489,10 +489,11 @@ ul, li {
 	color: #fff;
 	padding: 80px 0;
 }
-#Testimonial .testimonial-slider {
-	text-align: center;
+ .testimonial-slider {
+	text-align: center !important;
 	
 }
+
 .testimonial-slider li{
 	font-size: 19px !important;
 	font-style: italic;
@@ -743,10 +744,13 @@ hr.careerline{
     border-radius: 50%;
 } */
 
-.testimonial-slider img{
-	display: block;
-	margin-left: 450px;
-	margin-right: 450px;
+.testimonial-slider-img img{
+	position: sticky;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	width: 150px;
-    border-radius: 50%;
-}
+	border-radius: 50%;
+} 
