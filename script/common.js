@@ -1,45 +1,55 @@
 $(document).ready(function(){
    
     $("#submitBtn").click(function(){     
-         
         $("#contactform").submit(function(e) {
+          e.preventDefault();
             $("#plz-wait").show();
-            //alert('clicked')
-            //prevent Default functionality
-            e.preventDefault();
-           // $('#submitBtn button[type="submit"]').prop('disabled', true);
-            //get the action-url of the form
+           
+           $fullname=$('#fullname').val();
+           $email=$('#email').val();
+           $contact= $('#contact').val();
+           $company= $('#company').val();
+           $message= $('#message').val();
+            
+           data={
+             'fullname':$fullname,
+             'email':$email,
+             'contact':$contact,
+             'company':$company,
+             'message':$message
+           }
+         
+         
             var actionurl = e.currentTarget.action;
-           // alert(actionurl);
+          
             //do your own request an handle the results
             $.ajax({
                     url: actionurl,
-                    type: 'post',
-                    dataType:false,
+                    type: 'POST',
+                    data:data
                     
             })
             .done(function(){
                 $("#plz-wait").hide();
-             //alert("Success: Files sent!");
              $('#thankyou_success_message').show();
                 $('#thankyou_error_message').hide();
                 
-                $('#full-name-field').val('');
-                $('#mail-field').val('');
-                $('#contact-us-field').val('');
-                $('#company-field').val('');
-                $('#user-msg-field').val('');
+                $('#fullname').val('');
+                $('#email').val('');
+                $('#contact').val('');
+                $('#company').val('');
+                $('#message').val('');
             }).fail(function(){
                 $("#plz-wait").hide();
               // console.log("An error occurred, the files couldn't be sent!");
                //alert("An error occurred, the files couldn't be sent!");
                $('#thankyou_error_message').show();
                    $('#thankyou_success_message').hide();
-                   $('#full-name-field').val('');
-                   $('#mail-field').val('');
-                   $('#contact-us-field').val('');
-                   $('#company-field').val('');
-                   $('#user-msg-field').val('');
+                   $('#fullname').val('');
+                   $('#email').val('');
+                   $('#contact').val('');
+                   $('#company').val('');
+                   $('#message').val('');
              });
            
 
