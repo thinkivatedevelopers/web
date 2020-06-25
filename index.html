@@ -169,6 +169,7 @@
 							<P class="lead">In our Specialised learning app we provide classes for Kerala State Syllabus, ICSE and CBSE. Currently we have video classes for 12th grade students and will provide other classes in the near future. Subjects provided by us are Mathematics, Physics, Chemistry and Biology. Our online visual learning classes are conceptualised and created by expert teachers and Subject matter experts.</P>
 							<p class="lead">We provide example tests on every topic, which are segregated into three difficulty levels (easy, medium, hard), our students can also access and solve sample questions from every chapter.</p>
 							<p class="lead">A student can also view their profile where analytics of their performances in past test papers will be shown and also the total time of classes attended. The student can also raise doubts on any topic. These doubts will be cleared by our Subject Matter Experts.</p>
+						
 							<a href="https://play.google.com" target="_blank">
 								<img height="200px" src="images/google.png">
 							</a>
@@ -241,13 +242,19 @@
 					<div class="col-md-6 col-lg-4 mb-2">
 						
 						<div class="card ">
+							
 							<!--<img src="images/sme1.jpg" class="card-img-top" alt="...">-->
 							<div class="card-body">
-								<h4 class="card-title">Subject Matter Expert</h4>
+								
+								
+								<h4 class="card-title"> <span><img src="/images/pin.png" width="35px" height="35px" ></span> Subject Matter Expert</h4>
 								<hr class="careerline">
-					  			<p class="card-text" style="text-align :justify">We are hiring Subject matter experts with a qualification of a Bachelors degree or Masters degree with adept communication and language skills. Our SME’s should have the ability to turn subject knowledge into interesting and concise scripts and possess an imaginative and creative mind.</p>
-					  			<h5>Positions Available :3</h5>
+					  			<p class="card-text show-read-more" style="text-align :justify">We are hiring Subject matter experts with a qualification of a Bachelors degree or Masters degree with adept communication and language skills. Our SME’s should have the ability to turn subject knowledge into interesting and concise scripts and possess an imaginative and creative mind.</p>
+					  			<h5>Positions Available :3 
+                  
+								  </h5>
 								<h5>Location : Calicut</h5>
+								
 			  					<a href="https://www.indeed.co.in/Thinkivate-Learning-Private-Limited-jobs?vjk=d8b83dc66117cfad" class="btn btn-primary">Apply Now</a>
 							</div>
 						  </div>
@@ -255,24 +262,39 @@
 					</div>
 					<div class="col-md-6 col-lg-4 mb-2">
 						<div class="card" >
+							
 								<div class="card-body">
-								<h4 class="card-title">Visual Designers</h4>
+									
+								<h4 class="card-title"><span><img src="/images/pin.png" width="35px" height="35px" ></span>  Visual Designers</h4>
 								<hr class="careerline">
-						  		<p class="card-text" style="text-align: justify;">Applicants are required to have in-depth knowledge of Adobe After Effects and Adobe Premiere Pro with a minimum qualification of a diploma and a minimum work experience of 6 months.</p>
+						  		<p class="card-text show-read-more" style="text-align: justify;">Applicants are required to have in-depth knowledge of Adobe After Effects and Adobe Premiere Pro with a minimum qualification of a diploma and a minimum work experience of 6 months.</p>
 						  		<h5>Positions Available :1</h5>
-					  			<h5>Location : Calicut</h5>
+								  <h5>Location : Calicut</h5>
+								  
 						  		<a href="https://www.indeed.co.in/Thinkivate-Learning-Private-Limited-jobs?vjk=0f8b7af683c9c532" class="btn btn-primary">Apply Now</a>
 							</div>
 				  		</div>
 					</div>
 					<div class="col-md-6 col-lg-4 mb-2">
 						<div class="card">
-								<div class="card-body">
-								<h4 class="card-title">Android Developer</h4>
+						
+								<div class="card-body " >		
+							  		
+								<h4 class="card-title">
+									<span><img src="/images/pin.png" width="35px" height="35px" ></span> Android Developer</h4>
+									 
 								<hr class="careerline">  
-								<p class="card-text" style="text-align: justify;">Our developers are expected to have knowledge in API implementation and Payment gateway integration. Applicants must have experience in creating beautiful UI designs and have experience with releasing an app and publishing it on Google Play with a minimum work experience of 2 years.</p>
+								<p class="show-read-more card-text " style="text-align: justify;">
+								Our developers are expected to have knowledge in API implementation and 
+								Payment gateway integration. Applicants must have experience in creating
+								 beautiful UI designs and have experience with releasing an app and publishing it 
+								 on Google Play with a minimum work experience of 2 years.
+								 
+								
+								</p>
 								<h5>Positions Available :1</h5>
-					  			<h5>Location : Calicut</h5>
+								  <h5>Location : Calicut</h5>
+								  
 								<a href="https://www.indeed.co.in/Thinkivate-Learning-Private-Limited-jobs?vjk=9017c11c3b5aff38" class="btn btn-primary">Apply Now</a>
 							</div>
 					  	</div>
@@ -413,6 +435,30 @@
 	<script type="text/javascript" src="script/all-plugins.js"></script>
 	<script type="text/javascript" src="script/plugin-active.js"></script>
 	<script type="text/javascript" src="script/common.js"></script>
-
+    <script>
+		$(document).ready(function(){
+			var maxLength = 180;
+			$(".show-read-more").each(function(){
+				var myStr = $(this).text();
+				if($.trim(myStr).length > maxLength){
+					var newStr = myStr.substring(0, maxLength);
+					var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+					$(this).empty().html(newStr);
+					$(this).append(' <a href="javascript:void(0);" class="read-more">read more...</a>');
+					$(this).append('<span class="more-text">' + removedStr + '</span>');
+				}
+			});
+			$(".read-more").click(function(){
+				$(this).siblings(".more-text").contents().unwrap();
+				
+				$(this).remove();
+			});
+		});
+		</script>
+		<style>
+			.show-read-more .more-text{
+				display: none;
+			}
+		</style>
 	</body>
 </html>
