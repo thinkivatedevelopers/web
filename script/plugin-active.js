@@ -28,7 +28,8 @@ $(document).ready(function() {
       auto: true,
       mode: 'fade',
       infiniteLoop: true,
-      controls: false
+      controls: false,
+      speed:600
   });
   // Changing the defaults 
   window.sr = ScrollReveal();
