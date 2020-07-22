@@ -469,6 +469,17 @@
 
 	<div class="box"></div>
 
+	<div class="cookie-banner" style="display: block;">
+		<p>
+			We use cookies on this site to enhance your experience and for analytical purposes. 
+			By continuing to browse, you agree to our use of cookies. If you do not consent, 
+			please update your browser settings. 
+			To learn more visit our  
+			<a href="privacy-policy.html">Privacy Policy</a>
+			&nbsp; &nbsp; &nbsp; &nbsp; <button class="accept">OK</button>
+		</p>
+	</div>
+
 	<!-- Footer section starts here -->
 	<footer id="Footer">
 		<div class="container">
@@ -481,15 +492,12 @@
 					 &nbsp;<li ><a style="font-size:medium !important; color: blanchedalmond !important;" href="privacy-policy.html">Privacy Policy</a></li> <span style="color: blanchedalmond;">|</span>
 						<li ><a style="font-size:medium !important; color: blanchedalmond !important;" href="terms-and-conditions.html">Terms & Conditions</a></li> <span style="color: blanchedalmond;">|</span>
 					&nbsp;<li> <span style="color: blanchedalmond; font-size:small !important;">Copyright &copy; 2020 All right reserved | Thinkivate learning. </span></li>
-
-
 				</ul>
-
 			</div>
 		</div>
 	</footer>
 	<!-- Footer section ends here -->
-	</section>
+
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"
 			aria-hidden="true"></i></button>
 
@@ -498,6 +506,16 @@
 	<script type="text/javascript" src="script/all-plugins.js"></script>
 	<script type="text/javascript" src="script/plugin-active.js"></script>
 	<script type="text/javascript" src="script/common.js"></script>
+	<!-- Cookies-->
+	<script>
+		if (localStorage.getItem("cookieSeen") != "shown") {
+  			$(".cookie-banner").delay(2000).fadeIn();
+  			localStorage.setItem("cookieSeen","shown")
+			};
+			$(".accept").click(function() {
+ 				 $(".cookie-banner").fadeOut();
+			})
+	</script>
 	<script>
 		$(document).ready(function () {
 			var maxLength = 300;
