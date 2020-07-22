@@ -764,12 +764,12 @@ hr.careerline{
 	padding: 5px 14px;
 	/*display: flex;
 	align-items: center;*/
-	font-size: 12px;
+	font-size: 16px;
 	text-align: center;
-	color: whitesmoke;
+	color: #00000;
 	opacity: 0.6;
 	justify-content: space-between;
-	background-color: #ffff;
+	background-color: #fffff;
 	border-radius: 5px;
 	/*box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);*/
   }
@@ -777,9 +777,9 @@ hr.careerline{
 	/*height: 20px;*/
 	width: 40px;
 	float: inline-end !important;
-	background-color: #FFFFFF;
+	background-color: #00000;
 	border: none;
-	color:black;
+	color:#fffff;
 	border-radius: 2px;
 	cursor: pointer;
   }
