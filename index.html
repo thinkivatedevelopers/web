@@ -469,7 +469,7 @@
 
 	<div class="box"></div>
 
-	<div class="cookie-banner" style="display: block;">
+	<div class="cookie-banner" style="display:none;">
 		<p>
 			We use cookies on this site to enhance your experience and for analytical purposes. 
 			By continuing to browse, you agree to our use of cookies. If you do not consent, 
@@ -508,8 +508,8 @@
 	<script type="text/javascript" src="script/common.js"></script>
 	<!-- Cookies-->
 	<script>
-		if (localStorage.getItem("cookieSeen") != "shown") {
-  			$(".cookie-banner").delay(2000).fadeIn();
+		if (localStorage.getItem("cookieSeen") !=="shown") {
+  			$(".cookie-banner").delay(200).fadeIn();
   			localStorage.setItem("cookieSeen","shown")
 			};
 			$(".accept").click(function() {
