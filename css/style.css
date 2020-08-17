@@ -780,3 +780,7 @@ hr.careerline{
 	border-radius: 2px;
 	cursor: pointer;
   }
+  .latest-font{
+	font-family: 'Poppins', sans-serif !important;
+		font-weight: 300 !important;
+  }
