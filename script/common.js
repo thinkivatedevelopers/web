@@ -5,22 +5,34 @@ $(document).ready(function(){
           e.preventDefault();
             $("#plz-wait").show();
            
-           $fullname=$('#fullname').val();
+           $name=$('#name').val();
+          
            $email=$('#email').val();
-           $contact= $('#contact').val();
+           
+           $mobile= $('#mobile').val();
+          
            $company= $('#company').val();
+          
            $message= $('#message').val();
+           
             
+
+
            data={
-             'fullname':$fullname,
+             'name':$name,
              'email':$email,
-             'contact':$contact,
+             'mobile':$mobile,
+             'message':$message,
+             'method':"Thinkivate Website",
              'company':$company,
-             'message':$message
+             'against':"Thinkivate" 
+
            }
-         
+           
          
             var actionurl = e.currentTarget.action;
+
+           
           
             //do your own request an handle the results
             $.ajax({
@@ -29,14 +41,17 @@ $(document).ready(function(){
                     data:data
                     
             })
-            .done(function(){
+            .done(function(data){
+              console.log('response data from server');
+                console.log(data);
+
                 $("#plz-wait").hide();
-             $('#thankyou_success_message').show();
+                $('#thankyou_success_message').show();
                 $('#thankyou_error_message').hide();
                 
-                $('#fullname').val('');
+                $('#name').val('');
                 $('#email').val('');
-                $('#contact').val('');
+                $('#mobile').val('');
                 $('#company').val('');
                 $('#message').val('');
             }).fail(function(){
@@ -45,9 +60,9 @@ $(document).ready(function(){
                //alert("An error occurred, the files couldn't be sent!");
                $('#thankyou_error_message').show();
                    $('#thankyou_success_message').hide();
-                   $('#fullname').val('');
+                   $('#name').val('');
                    $('#email').val('');
-                   $('#contact').val('');
+                   $('#mobile').val('');
                    $('#company').val('');
                    $('#message').val('');
              });
