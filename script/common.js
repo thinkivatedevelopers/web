@@ -3,6 +3,7 @@ $(document).ready(function(){
     $("#submitBtn").click(function(){     
         $("#contactform").submit(function(e) {
           e.preventDefault();
+          e.stopImmediatePropagation();
             $("#plz-wait").show();
            
            $name=$('#name').val();
